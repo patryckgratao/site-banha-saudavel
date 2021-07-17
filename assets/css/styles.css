@@ -70,3 +70,13 @@ body {
 }
 
 /* FIM DO HEADER */
+
+/* INICIO DO BANNER */
+
+.banner-container {
+  margin-bottom: 1rem;
+}
+.banner-container img {
+  max-width: 100%;
+  object-fit: cover;
+}
