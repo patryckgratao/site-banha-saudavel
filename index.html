@@ -5,19 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banha Suína Saudável</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap"
       rel="stylesheet"
     />
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" class="css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script>
+      const aloha = () => {
+        const menu = document.querySelector(".header-menu-container");
+        if (menu?.classList.contains("show")) {
+          menu.classList.remove("show");
+        } else {
+          menu.classList.add("show");
+        }
+      };
+    </script>
   </head>
   <body>
     <div class="header-container">
       <div class="header-logo-container">
         <h1>Banha Saudável</h1>
+      </div>
+      <div class="header-menu-mobile">
+        <button onClick="aloha()">
+          <img src="./assets/img/menu-mobile.svg" />
+        </button>
       </div>
       <div class="header-menu-container">
         <ul>
