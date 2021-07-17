@@ -92,7 +92,7 @@ body {
   .header-menu-container ul li a {
     max-width: 100%;
     margin-left: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -182,7 +182,7 @@ body {
 
 /* MOBILE PRODUTOS */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 719px) {
   .produtos-container {
     margin: 0 1rem;
   }
@@ -195,4 +195,16 @@ body {
   }
 }
 
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .produtos-container {
+    margin: 0 1rem;
+  }
+  .produtos-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .lista-produtos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* FIM DOS PRODUTOS */
