@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <script>
-      const aloha = () => {
+      const showMenuMobile = () => {
         const menu = document.querySelector(".header-menu-container");
         if (menu?.classList.contains("show")) {
           menu.classList.remove("show");
@@ -33,7 +33,7 @@
         <h1>Banha Saudável</h1>
       </div>
       <div class="header-menu-mobile">
-        <button onClick="aloha()">
+        <button onClick="showMenuMobile()">
           <img src="./assets/img/menu-mobile.svg" />
         </button>
       </div>
